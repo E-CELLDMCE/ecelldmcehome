@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us</title>
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+  <style>
+   body {
+      background-image: url('../images/bg/about_us_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+   }
+  </style>
+
+   <!-- Navbar using Bootstrap -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="#">
+            <img src="../images/logo/ecell logo.png" alt="E-Cell DMCE" width="40" height="40" class="d-inline-block align-text-top">
+            E-Cell DMCE
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">About Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="Events1.html">Events</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="ourteams.html">Our Team</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+
+   <div class="about-us">
+      <h1 class="heading">E-Cell Coordinators</h1>
+      <div class="coordinators">
+         <div class="coordinator">
+            <div class="social-media">
+               <img src="../images/faculties/deepali maam .jpg" alt="Coordinator 1 Photo" class="fade-in">  
+            </div>
+            <a href="https://linkedin.com/in/sejal-khilari-a387b4252"> 
+               <h2 class="name">Miss. Deepali Kadam</h2>
+            </a>
+         </div>
+         <div class="coordinator">
+            <div class="social-media">
+               <img src="../images/faculties/anand sir.jpg" alt="Coordinator 2 Photo" class="fade-in">
+            </div>
+            <a href="https://linkedin.com/in/sejal-khilari-a387b4252"> 
+               <h2 class="name">Mr. Anand Joshi</h2>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- Vision and Mission Section -->
+   <section class="vision-mission py-5">
+      <div class="container">
+         <div class="row text-center">
+            <div class="col-md-6">
+               <div class="card bg-dark text-white">
+                  <div class="card-body">
+                     <h3 class="card-title">Our Vision</h3>
+                     <p class="card-text">
+                        To create a self-sustaining entrepreneurial ecosystem at DMCE that nurtures young minds and develops them into future innovators and leaders.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="card bg-dark text-white">
+                  <div class="card-body">
+                     <h3 class="card-title">Our Mission</h3>
+                     <p class="card-text">
+                        To empower students by providing resources, mentorship, and opportunities, fostering an entrepreneurial mindset, and building a strong foundation for startups.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- JavaScript to handle the image fade-in animation -->
+   <script>
+      window.addEventListener('load', () => {
+         setTimeout(() => {
+            document.querySelectorAll('.coordinator img').forEach(img => {
+               img.classList.add('loaded');
+            });
+         }, 500);
+      });
+   </script>
+   
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

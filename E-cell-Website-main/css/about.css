@@ -1,0 +1,85 @@
+html {
+  background-color: black; /* Black background for the entire webpage */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-us {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white; /* White text to make the heading visible on black background */
+}
+
+.coordinators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.coordinator {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.coordinator img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.coordinator img.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: black; /* White text for coordinator names */
+}
+
+.vision-mission .card {
+  background-color: #1a1a1a; /* Darker background for the vision and mission cards */
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.vision-mission .card h3 {
+  font-size: 28px;
+  color: #FFD700; /* Golden yellow color for heading text */
+  margin-bottom: 15px;
+}
+
+.vision-mission .card p {
+  font-size: 18px;
+  color: white; /* White text for body text */
+}
+
+@media (max-width: 768px) {
+  .coordinator {
+    width: 100%;
+  }
+
+  .vision-mission .card {
+    margin-bottom: 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white; /* White color for links */
+}
